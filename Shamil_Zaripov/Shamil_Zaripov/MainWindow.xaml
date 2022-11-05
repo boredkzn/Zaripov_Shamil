@@ -1,0 +1,20 @@
+﻿<Window x:Class="Shamil_Zaripov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shamil_Zaripov"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="276" Width="439">
+    <Grid>
+        <Label Content="Вход" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,43,0,0" FontSize="30"/>
+        <Label Content="Логин" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,104,0,0"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,147,0,0"/>
+        <Button Content="Войти" Margin="56,193,249,26" Click="Button_Click"/>
+        <Button Content="Регистрация" Margin="247,193,58,26" Click="Button_Click_1"/>
+        <TextBox Text="" TextWrapping="Wrap" Margin="170,104,38,115" x:Name="LoginBox"/>
+        <TextBox Text="" TextWrapping="Wrap" Margin="170,147,38,72" x:Name="PasswordBox"/>
+
+
+    </Grid>
+</Window>

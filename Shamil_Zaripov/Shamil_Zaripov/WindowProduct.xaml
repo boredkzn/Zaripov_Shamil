@@ -1,0 +1,46 @@
+﻿<Window x:Class="Shamil_Zaripov.WindowProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shamil_Zaripov"
+        mc:Ignorable="d"
+        Title="WindowProduct" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="data" Height="419" VerticalAlignment="Top" Background="AliceBlue">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel>
+                    </StackPanel>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="0.3" BorderBrush="Black">
+                        <Grid Width="820">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.5*"></RowDefinition>
+                                <RowDefinition Height="0.5*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Content="№" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+                            <Label FontSize="14" FontFamily="Times New Roman" Content="{Binding ProductId}" Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+
+                            <Label FontSize="14" FontFamily="Times New Roman" FontWeight="Bold" Content="Фото" Grid.Column="1" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+                            <Image  Source="{Binding Images}" Grid.Column="1" Grid.Row="1"></Image>
+
+                           
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>
