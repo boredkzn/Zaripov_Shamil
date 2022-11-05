@@ -167,6 +167,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Диаграмы и дикшенери\DataDictionary.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -182,6 +183,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Диаграмы и дикшенери\ERD.png" />
+    <Resource Include="Диаграмы и дикшенери\UseCase.png" />
     <Resource Include="Resources\D344Y7.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
