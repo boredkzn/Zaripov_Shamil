@@ -183,6 +183,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Запрос\quert.sql" />
     <Resource Include="Диаграмы и дикшенери\ERD.png" />
     <Resource Include="Диаграмы и дикшенери\UseCase.png" />
     <Resource Include="Resources\D344Y7.jpg">
